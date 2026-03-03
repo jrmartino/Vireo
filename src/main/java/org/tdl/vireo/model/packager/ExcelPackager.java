@@ -83,6 +83,7 @@ public class ExcelPackager extends AbstractPackager<ExcelExportPackage> {
                         if(column.getValuePath().size() > 1){
                              valuePath = new String[] {valuePath[0]};
                         }
+                        submission.getCommitteeContactEmail();
                         Object valueAsObject = EntityUtility.getValueFromPath(submission, valuePath);
 
                         String value = "";
